@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Тест добавления закладки [Firefox]"
+           tests="6"
+           failures="1"
+           errors="0"
+           skipped="5"
+           time="0,000">
+  <properties />
+            <testcase name="setUp" time="0,000" classname="BookmarksTest">
+                <failure type="java.net.MalformedURLException"
+                  message="no protocol: "
+              >
+<![CDATA[java.net.MalformedURLException: no protocol: 
+  java.net.URL.<init>(URL.java:593)
+  java.net.URL.<init>(URL.java:490)
+  java.net.URL.<init>(URL.java:439)
+  BaseTest.getRemoteDriver(BaseTest.java:112)
+  BaseTest.setUp(BaseTest.java:149)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+  org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+  java.lang.Thread.run(Thread.java:748)
+]]>
+      </failure>
+
+          </testcase>
+  
+            <testcase name="tearDown" time="0.0" classname="BookmarksTest">
+          <skipped />
+    </testcase>
+            <testcase name="DelletingBookmarkTest" time="0.0" classname="BookmarksTest">
+          <skipped />
+    </testcase>
+            <testcase name="AddCheckBookmarkTest" time="0.0" classname="BookmarksTest">
+          <skipped />
+    </testcase>
+            <testcase name="AuthorizationOnTheSite" time="0.0" classname="BookmarksTest">
+          <skipped />
+    </testcase>
+            <testcase name="AddingBookmarkTest" time="0.0" classname="BookmarksTest">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>

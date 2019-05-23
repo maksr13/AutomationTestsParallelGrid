@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Тест регистрационной формы на валидность [Opera]"
+           tests="63"
+           failures="1"
+           errors="0"
+           skipped="62"
+           time="0,227">
+  <properties />
+            <testcase name="setUp" time="0,000" classname="RegistrationFormFieldsTest">
+                <failure type="org.testng.TestNGException"
+                  message="
+Parameter &apos;Log&apos; is required by @Configuration on method setUp but has not been marked @Optional or defined
+in D:\Учеба предметы\ДИПЛОМ\TestNGPr2\RemoteRun.xml"
+              >
+<![CDATA[org.testng.TestNGException: 
+Parameter 'Log' is required by @Configuration on method setUp but has not been marked @Optional or defined
+in D:\Учеба предметы\ДИПЛОМ\TestNGPr2\RemoteRun.xml
+  org.testng.internal.Parameters.createParameters(Parameters.java:155)
+  org.testng.internal.Parameters.createParameters(Parameters.java:355)
+  org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:86)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:199)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+  org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+  java.lang.Thread.run(Thread.java:748)
+]]>
+      </failure>
+
+          </testcase>
+  
+            <testcase name="teardownTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="tearDown" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationEmailTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationLoginTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationEmailTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationLoginTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationEmailTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationLoginTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationPswTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationEmailTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationEmailTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationLoginTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationEmailTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationEmailTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationEmailTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationEmailTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationLoginTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationEmailTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationLoginTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationLoginTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationPswTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationEmailTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationEmailTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationLoginTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationEmailTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationLoginTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationEmailTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationLoginTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationPswTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationEmailTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationLoginTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationEmailTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationEmailTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationEmailTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationLoginTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationLoginTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationPswTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationLoginTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationLoginTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationLoginTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationPswTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationEmailTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationPswTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationEmailTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationEmailTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationLoginTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationLoginTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationEmailTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationEmailTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationEmailTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationLoginTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationLoginTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="GoToRegistrationForm" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationEmailTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationPswTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationEmailTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationEmailTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationEmailTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationPswTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationLoginTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationEmailTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+            <testcase name="RegistrationPswTest" time="0.0" classname="RegistrationFormFieldsTest">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>
