@@ -1,0 +1,1 @@
+#player > div.adv-player.not-ios.vast.flowplayer.is-mouseout.fp-default-playlist.is-ready.is-playing.adv-complete > div.fp-player > div.fp-ui > div.skip_adv_block

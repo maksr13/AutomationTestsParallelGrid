@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!--    PARAMETERS
+
+        Browser
+        1 - Chrome
+        2 - Firefox
+        3 - Opera
+        4 - IE
+        5 - Chrome Headless
+        6 - Firefox Headless
+        7 - Opera Headless
+        8 - IE Headless
+
+        Platform
+        1  - ANDROID
+        2  - IOS
+        3  - LINUX
+        4  - MAC
+        5  - UNIX
+        6  - VISTA
+        7  - WIN8
+        8  - WIN8_1
+        9  - WIN10
+        10 - WINDOWS
+        11 - XP
+        0  - ANY
+
+        Mode:
+        local - запуск теста на локальной машине
+        remote - запуск теста на удаленной машине
+-->
+
+<!-- parallel="tests" thread-count="2" verbose="1"-->
+
+<suite name="AllTestsSuite" parallel="tests" thread-count="3">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+
+    <parameter name="platform" value="0"/>
+    <parameter name="NodeAdress" value=""/>
+    <parameter name="SpecialParameter" value=""/>
+    <parameter name="mode" value="remote"/>
+
+    <!--________________________________________________________________-->
+    <test name="Тест добавления оценки [Chrome]">
+        <parameter name="selenium.browser" value="1"/>
+        <parameter name="Log" value=""/>
+        <parameter name="Psw" value=""/>
+        <parameter name="SpecialParameter" value=""/>
+        <classes>
+            <class name="AddingMarkForFilmTest"/>
+        </classes>
+    </test>
+    <test name="Тест добавления оценки [Firefox]">
+        <parameter name="selenium.browser" value="2"/>
+        <parameter name="Log" value=""/>
+        <parameter name="Psw" value=""/>
+        <parameter name="SpecialParameter" value=""/>
+        <classes>
+            <class name="AddingMarkForFilmTest"/>
+        </classes>
+    </test>
+    <test name="Тест добавления оценки [Opera]">
+        <parameter name="selenium.browser" value="3"/>
+        <parameter name="Log" value=""/>
+        <parameter name="Psw" value=""/>
+        <parameter name="SpecialParameter" value=""/>
+        <classes>
+            <class name="AddingMarkForFilmTest"/>
+        </classes>
+    </test>
+    <!--________________________________________________________________-->
+
+    <!--________________________________________________________________-->
+
+    <test name="Тест регистрационной формы на валидность [Chrome]">
+        <parameter name="selenium.browser" value="1"/>
+        <classes>
+            <class name="RegistrationFormFieldsTest"/>
+        </classes>
+    </test>
+    <test name="Тест регистрационной формы на валидность [Firefox]">
+        <parameter name="selenium.browser" value="2"/>
+        <classes>
+            <class name="RegistrationFormFieldsTest"/>
+        </classes>
+    </test>
+    <test name="Тест регистрационной формы на валидность [Opera]">
+        <parameter name="selenium.browser" value="3"/>
+        <classes>
+            <class name="RegistrationFormFieldsTest"/>
+        </classes>
+    </test>
+
+    <!--________________________________________________________________-->
+
+    <test name="Проверка всех ссылок на главной странице [Chrome]">
+        <parameter name="selenium.browser" value="1"/>
+        <classes>
+            <class name="VerifyLinks"/>
+        </classes>
+    </test>
+    <test name="Проверка всех ссылок на главной странице [Firefox]">
+        <parameter name="selenium.browser" value="2"/>
+        <classes>
+            <class name="VerifyLinks"/>
+        </classes>
+    </test>
+    <test name="Проверка всех ссылок на главной странице [Opera]">
+        <parameter name="selenium.browser" value="3"/>
+        <classes>
+            <class name="VerifyLinks"/>
+        </classes>
+    </test>
+
+
+    <!--Тесты для которых нужна авторизация-->
+    <!--________________________________________________________________-->
+    <test name="Тест добавления оценки [Chrome]">
+        <parameter name="selenium.browser" value="1"/>
+        <parameter name="Log" value=""/>
+        <parameter name="Psw" value=""/>
+        <parameter name="SpecialParameter" value=""/>
+        <classes>
+            <class name="AddingMarkForFilmTest"/>
+        </classes>
+    </test>
+    <test name="Тест добавления оценки [Firefox]">
+        <parameter name="selenium.browser" value="2"/>
+        <parameter name="Log" value=""/>
+        <parameter name="Psw" value=""/>
+        <parameter name="SpecialParameter" value=""/>
+        <classes>
+            <class name="AddingMarkForFilmTest"/>
+        </classes>
+    </test>
+    <test name="Тест добавления оценки [Opera]">
+        <parameter name="selenium.browser" value="3"/>
+        <parameter name="Log" value=""/>
+        <parameter name="Psw" value=""/>
+        <parameter name="SpecialParameter" value=""/>
+        <classes>
+            <class name="AddingMarkForFilmTest"/>
+        </classes>
+    </test>
+
+    <!--________________________________________________________________-->
+
+    <test name="Тест добавления закладки [Chrome]">
+        <parameter name="selenium.browser" value="1"/>
+        <parameter name="Log" value=""/>
+        <parameter name="Psw" value=""/>
+        <classes>
+            <class name="BookmarksTest"/>
+        </classes>
+    </test>
+    <test name="Тест добавления закладки [Firefox]">
+        <parameter name="selenium.browser" value="2"/>
+        <parameter name="Log" value=""/>
+        <parameter name="Psw" value=""/>
+        <classes>
+            <class name="BookmarksTest"/>
+        </classes>
+    </test>
+    <test name="Тест добавления закладки [Opera]">
+        <parameter name="selenium.browser" value="3"/>
+        <parameter name="Log" value=""/>
+        <parameter name="Psw" value=""/>
+        <classes>
+            <class name="BookmarksTest"/>
+        </classes>
+    </test>
+
+    <!--________________________________________________________________-->
+
+    <test name="Тест добавления фильма в раздел Досмотреть [Chrome]">
+        <parameter name="selenium.browser" value="1"/>
+        <parameter name="Log" value=""/>
+        <parameter name="Psw" value=""/>
+        <parameter name="SpecialParameter" value="https://rezka.ag/films/drama/29539-zelenaya-kniga-2018-movie-1.html"/>
+        <classes>
+            <class name="WatchFilmLaterTest"/>
+        </classes>
+    </test>
+    <test name="Тест добавления фильма в раздел Досмотреть [Firefox]">
+        <parameter name="selenium.browser" value="2"/>
+        <parameter name="Log" value=""/>
+        <parameter name="Psw" value=""/>
+        <parameter name="SpecialParameter" value="https://rezka.ag/films/drama/29539-zelenaya-kniga-2018-movie-1.html"/>
+        <classes>
+            <class name="WatchFilmLaterTest"/>
+        </classes>
+    </test>
+    <test name="Тест добавления фильма в раздел Досмотреть [Opera]">
+        <parameter name="selenium.browser" value="3"/>
+        <parameter name="Log" value=""/>
+        <parameter name="Psw" value=""/>
+        <parameter name="SpecialParameter" value="https://rezka.ag/films/drama/29539-zelenaya-kniga-2018-movie-1.html"/>
+        <classes>
+            <class name="WatchFilmLaterTest"/>
+        </classes>
+    </test>
+
+    <!--________________________________________________________________-->
+
+    <test name="Тест добавления комментария [Chrome]">
+        <parameter name="selenium.browser" value="1"/>
+        <parameter name="Log" value=""/>
+        <parameter name="Psw" value=""/>
+        <classes>
+            <class name="UserCommentingTest"/>
+        </classes>
+    </test>
+    <test name="Тест добавления комментария [Firefox]">
+        <parameter name="selenium.browser" value="2"/>
+        <parameter name="Log" value=""/>
+        <parameter name="Psw" value=""/>
+        <classes>
+            <class name="UserCommentingTest"/>
+        </classes>
+    </test>
+    <test name="Тест добавления комментария [Opera]">
+        <parameter name="selenium.browser" value="3"/>
+        <parameter name="Log" value=""/>
+        <parameter name="Psw" value=""/>
+        <classes>
+            <class name="UserCommentingTest"/>
+        </classes>
+    </test>
+
+
+
+</suite>

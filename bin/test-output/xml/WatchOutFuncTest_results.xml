@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="WatchOutFuncTest1"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="13,558">
+  <properties />
+  
+  
+            <testcase name="AuthorizationOnTheSite" time="13,558" classname="WatchOutFuncTest" />
+      
+</testsuite>

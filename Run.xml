@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name="AllTestsSuite" > <!-- parallel="tests" thread-count="2" -->
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+
+    <test name="Тест №1">
+        <parameter name="mode" value="local"/> <!-- ВЫБОР РЕЖИМА -->
+        <parameter name="Log" value=""/>       <!-- ЛОГИН ДЛЯ АВТОРИЗАЦИИ -->
+        <parameter name="Psw" value=""/>       <!-- ПАРОЛЬ ДЛЯ АВТОРИЗАЦИИ -->
+        <parameter name="SpecialParameter" value=""/> <!-- спец. параметр -->
+
+        <parameter name="NodeAdress" value=""/>       <!-- АДРЕСС СЕРВЕРА -->
+        <parameter name="platform" value="0"/>        <!-- ОС ЗАПУСКА -->
+
+        <classes>
+            <class name="newClass1"/>
+        </classes>
+    </test>
+
+
+</suite>
+
+
+
+
+

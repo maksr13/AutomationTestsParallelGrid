@@ -4,12 +4,14 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.*;
 
+import java.util.ArrayList;
+
 public class BookmarksTest extends BaseTest{
 
     private String NameOfFilm;
     //-----------------------------------Tests-----------------------------------
     @Test(priority=1)
-    public void AuthorizationOnTheSite(){
+    public void AuthorizationOnTheSite() throws InterruptedException {
 
         Reporter.log("---------------------------------------------------------------------");
         Reporter.log("АВТОРИЗАЦИЯ НА САЙТЕ");
@@ -28,6 +30,8 @@ public class BookmarksTest extends BaseTest{
             WebElement AuthButton = driver.findElement(By.cssSelector("#top-head > div > div.b-tophead-right.pull-right  > a.b-tophead__login"));
             ((WebElement) AuthButton).click();
 
+            Thread.sleep(1000);
+            checkNewTabsAndDeleting();
             Reporter.log("Проверка появления формы авторизации");
             Assert.assertTrue(driver.findElement(By.cssSelector("#login-popup")).getAttribute("style").equals("") != true, "Нет формы авторизации");
 
@@ -49,6 +53,8 @@ public class BookmarksTest extends BaseTest{
             WebElement SubmitBtn = driver.findElement(By.cssSelector("#login-popup > div.b-popup__content > div > div.b-login__popup-form > form > div.row.clearfix > div > button"));
             ((WebElement) SubmitBtn).click();
 
+            Thread.sleep(1000);
+            checkNewTabsAndDeleting();
             Reporter.log("Проверка успешно пройденой авторизации");
             Assert.assertTrue(driver.findElements(By.cssSelector("#top-head > div > div.b-tophead-right.user-things.pull-right")).size() > 0, "Ошибка авторизации");
 
@@ -72,6 +78,13 @@ public class BookmarksTest extends BaseTest{
         Reporter.log("Переход на страницу первого фильма на главной странице");
         WebElement LinkSomeFilm = driver.findElement(By.cssSelector("#main > div.b-container.b-content.b-wrapper > div.b-content__inline > div > div.b-content__inline_items  :first-child :first-child"));
         ((WebElement) LinkSomeFilm ).click();
+
+        ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
+        if(tabs.size() > 1){
+            driver.switchTo().window(tabs.get(1));
+            driver.close();
+            driver.switchTo().window(tabs.get(0));
+        }
 
         Reporter.log("Проверка наличия кнопки добавления в закладки");
         Assert.assertTrue(driver.findElements(By.cssSelector(".b-sideactions__fav button")).size() > 0, "Нет кнопки добавления в закладки");
@@ -147,6 +160,13 @@ public class BookmarksTest extends BaseTest{
         Reporter.log("Переход в раздел закладок");
         driver.findElement(By.cssSelector("#top-head > div > div.b-tophead-right.user-things.pull-right > a:nth-child(3)")).click();
 
+        ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
+        if(tabs.size() > 1){
+            driver.switchTo().window(tabs.get(1));
+            driver.close();
+            driver.switchTo().window(tabs.get(0));
+        }
+
         Reporter.log("Проверка наличия закладок");
         Assert.assertTrue(driver.findElements(By.cssSelector(".b-content__inline div[class = \"b-content__inline_item\"]")).size() > 0, "Нет закладок. Закладка не добавилась");
 
@@ -184,10 +204,10 @@ public class BookmarksTest extends BaseTest{
         driver.switchTo().alert().accept();
         driver.switchTo().defaultContent();
 
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         String LastBookmark;
         Reporter.log("Проверка того, что последняя добавленная закладка - это фильм отличающийся от того который был удален");
-        if(driver.findElements(By.cssSelector("div[class = \"b-content__inline_item\"] > div[class = \"b-content__inline_item-link\"] > a")).size() != 0)
+        if(driver.findElements(By.cssSelector("div[class = \"b-content__inline_item\"] > div[class = \"b-content__inline_item-link\"] > a")).size() > 0)
         {
             LastBookmark = driver.findElement(By.cssSelector("div[class = \"b-content__inline_item\"] > div[class = \"b-content__inline_item-link\"] > a")).getText();
             Assert.assertTrue(!(LastBookmark.equals(NameOfFilm)), "Фильм не был удален");

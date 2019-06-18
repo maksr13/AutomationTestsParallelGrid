@@ -4,6 +4,8 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
+
 public class UserCommentingTest extends BaseTest {
 
     String msg = "Классный фильм";
@@ -14,8 +16,8 @@ public class UserCommentingTest extends BaseTest {
 
 
     //-----------------------------------Tests-----------------------------------
-    @Test(priority = 1)
-    public void AuthorizationOnTheSite() {
+    @Test(priority = 1) // АВТОРИЗАЦИЯ НА СЕЙТЕ
+    public void AuthorizationOnTheSite() throws InterruptedException {
 
         Reporter.log("---------------------------------------------------------------------");
         Reporter.log("АВТОРИЗАЦИЯ НА САЙТЕ");
@@ -23,15 +25,22 @@ public class UserCommentingTest extends BaseTest {
 
         Reporter.log("Открытие главной страницы");
         driver.navigate().to("http://www.rezka.ag/");
+        checkNewTabsAndDeleting();
 
         Reporter.log("Начало авторизации");
         if (!(driver.findElements(By.cssSelector("#top-head > div > div.b-tophead-right.user-things.pull-right")).size() > 0)) {
+
+            checkNewTabsAndDeleting();
+
             Reporter.log("Проверка наличия кнопки открытия формы для авторизации");
             Assert.assertTrue(driver.findElements(By.cssSelector("#top-head > div > div.b-tophead-right.pull-right > a.b-tophead__login")).size() > 0, "Нет кнопки окрытия формы авторизации");
 
             Reporter.log("Нажатие на кнопку авторизации");
             WebElement AuthButton = driver.findElement(By.cssSelector("#top-head > div > div.b-tophead-right.pull-right > a.b-tophead__login"));
             ((WebElement) AuthButton).click();
+
+            Thread.sleep(1000);
+            checkNewTabsAndDeleting();
 
             Reporter.log("Проверка появления формы авторизации");
             Assert.assertTrue(driver.findElement(By.cssSelector("#login-popup")).getAttribute("style").equals("") != true, "Нет формы авторизации");
@@ -54,6 +63,8 @@ public class UserCommentingTest extends BaseTest {
             WebElement SubmitBtn = driver.findElement(By.cssSelector("#login-popup > div.b-popup__content > div > div.b-login__popup-form > form > div.row.clearfix > div > button"));
             ((WebElement) SubmitBtn).click();
 
+            Thread.sleep(1000);
+            checkNewTabsAndDeleting();
             Reporter.log("Проверка успешно пройденой авторизации");
             Assert.assertTrue(driver.findElements(By.cssSelector("#top-head > div > div.b-tophead-right.user-things.pull-right")).size() > 0, "Ошибка авторизации");
 
@@ -66,7 +77,7 @@ public class UserCommentingTest extends BaseTest {
         Reporter.log("*********************************************************************");
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2) // ТЕСТ ДОБАВЛЕНИЕ КОМЕНТАРИЯ
     public void AddingCommentTest() throws InterruptedException {
 
         Reporter.log("---------------------------------------------------------------------");
@@ -75,7 +86,12 @@ public class UserCommentingTest extends BaseTest {
 
         Reporter.log("Переход на страницу первого фильма на главной странице");
         WebElement LinkSomeFilm = driver.findElement(By.cssSelector("#main > div.b-container.b-content.b-wrapper > div.b-content__inline > div > div.b-content__inline_items  :first-child :first-child"));
+        String urlOfFilm = LinkSomeFilm.getAttribute("href");
         ((WebElement) LinkSomeFilm).click();
+
+        Reporter.log("Ссылка: " + "https://rezka.ag/" + urlOfFilm);
+
+        checkNewTabsAndDeleting();
 
         Reporter.log("Проверка наличия поля для ввода комментария");
         Assert.assertTrue(driver.findElements(By.id("comments-0")).size() > 0, "Нет поля для добавления комментария");
@@ -86,6 +102,7 @@ public class UserCommentingTest extends BaseTest {
         CommentField.click();
 
         Thread.sleep(1000);
+        checkNewTabsAndDeleting();
         Reporter.log("Проверка появления правил использования комментариев");
         if (driver.findElements(By.id("ps-overlay-wrap")).size() > 0) {
             Reporter.log("Соглашение с правилами");
@@ -117,7 +134,7 @@ public class UserCommentingTest extends BaseTest {
         Reporter.log("*********************************************************************");
     }
 
-    @Test(priority = 3)
+    @Test(priority = 3) // ТЕСТ ИЗМЕНЕНИЯ КОММЕНТАРИЯ
     public void EditingCommentTest() throws InterruptedException {
 
         Reporter.log("---------------------------------------------------------------------");
@@ -158,7 +175,7 @@ public class UserCommentingTest extends BaseTest {
         Reporter.log("*********************************************************************");
     }
 
-    @Test(priority = 4)
+    @Test(priority = 4) // ТЕСТ УДАЛЕНИЯ КОММЕНТАРИЯ
     public void DelletingCommentTest() throws InterruptedException {
 
         Reporter.log("---------------------------------------------------------------------");
@@ -175,9 +192,12 @@ public class UserCommentingTest extends BaseTest {
         driver.switchTo().alert().accept();
         driver.switchTo().defaultContent();
 
-        Thread.sleep(3000);
-        LastCommentAutor = driver.findElement(By.cssSelector(".comments-tree-item span[class = \"name\"]")).getText();
-        LastCommentMsg = driver.findElement(By.cssSelector(".comments-tree-item div[class=\"text\"] > div")).getText();
+        Thread.sleep(2000);
+
+        if(driver.findElements(By.cssSelector("ul[class=\"edit\"] :nth-child(2) a")).size() > 0){
+            LastCommentAutor = driver.findElement(By.cssSelector(".comments-tree-item span[class = \"name\"]")).getText();
+            LastCommentMsg = driver.findElement(By.cssSelector(".comments-tree-item div[class=\"text\"] > div")).getText();
+        }
 
         Reporter.log("Проверка удаления комментария");
         Assert.assertTrue(!(LastCommentAutor.equals(log) && LastCommentMsg.equals(msg)), "Комментарий не был удален");

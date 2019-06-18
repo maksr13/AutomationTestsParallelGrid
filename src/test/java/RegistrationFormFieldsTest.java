@@ -3,15 +3,15 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.*;
+import java.util.ArrayList;
 
 public class RegistrationFormFieldsTest extends BaseTest{
 
 
     //-----------------------------------Tests-----------------------------------
-
     /* ПЕРЕХОД НА РЕГИСТРАЦИОННУЮ ФОРМУ */
-    @Test
-    public void GoToRegistrationForm() {
+    @Test (priority=1)
+    public void GoToRegistrationForm() throws InterruptedException {
 
         Reporter.log("---------------------------------------------------------------------");
         Reporter.log("ПЕРЕХОД НА РЕГИСТР. ФОРМУ И ПРОВЕРКА НАЛИЧИЯ ПОЛЕЙ");
@@ -27,8 +27,19 @@ public class RegistrationFormFieldsTest extends BaseTest{
         WebElement registrButton = driver.findElement(By.className("b-tophead__register"));
         ((WebElement) registrButton).click();
 
+        Thread.sleep(1000);
+        checkNewTabsAndDeleting();
+        Thread.sleep(2000);
+
+        if(driver.findElement(By.id("register-popup")).getAttribute("class").equals("b-popup b-popup__absolute b-popup__opened") != true ){
+            ((WebElement) registrButton).click();
+        }
+        if(driver.findElement(By.id("register-popup")).getAttribute("style").equals("") != true ){
+            ((WebElement) registrButton).click();
+        }
+
         Reporter.log("Проверка появления формы регистрации");
-        Assert.assertTrue(driver.findElement(By.id("register-popup")).getAttribute("style").equals("") != true, "Регистрационная форма не открылась");
+        Assert.assertTrue(driver.findElement(By.id("register-popup")).getAttribute("class").equals("b-popup b-popup__absolute b-popup__opened") != true, "Регистрационная форма не открылась");
 
         Reporter.log("Проверка наличия поля email");
         Assert.assertTrue(driver.findElements(By.id("email")).size() > 0, "Нет поля email");
@@ -92,13 +103,15 @@ public class RegistrationFormFieldsTest extends BaseTest{
     }
 
     /* ПРОВЕРКА ПОЛЯ EMAIL НА ВАЛИДНОСТЬ */
-    @Test(dataProvider = "DataForTestEmailField")
+    @Test(dataProvider = "DataForTestEmailField", priority=2)
     public void RegistrationEmailTest(String emailString, String FirstMsgEm, String SecondMsgEm, String MsgName, String MsgPsw) throws InterruptedException {
 
         Reporter.log("*");
         Reporter.log(emailString);
         Reporter.log("*");
 
+        ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
+        checkNewTabsAndDeleting();
         WebElement emailInput = driver.findElement(By.id("email"));
         WebElement nameInput = driver.findElement(By.id("name"));
         WebElement pswInput = driver.findElement(By.id("password1"));
@@ -171,13 +184,15 @@ public class RegistrationFormFieldsTest extends BaseTest{
     }
 
     /* ПРОВЕРКА ПОЛЯ LOGIN НА ВАЛИДНОСТЬ */
-    @Test(dataProvider = "DataForTestLoginField")
+    @Test(dataProvider = "DataForTestLoginField", priority=3)
     public void RegistrationLoginTest(String loginString, String MsgLogin1, String MsgLogin2, String MsgEm, String MsgPsw) throws InterruptedException {
 
         Reporter.log("*");
         Reporter.log(loginString);
         Reporter.log("*");
 
+        ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
+        checkNewTabsAndDeleting();
         WebElement emailInput = driver.findElement(By.id("email"));
         WebElement nameInput = driver.findElement(By.id("name"));
         WebElement pswInput = driver.findElement(By.id("password1"));
@@ -233,13 +248,15 @@ public class RegistrationFormFieldsTest extends BaseTest{
     }
 
     /* ПРОВЕРКА ПОЛЯ PASSWORD НА ВАЛИДНОСТЬ */
-    @Test(dataProvider = "DataForTestPswField")
+    @Test(dataProvider = "DataForTestPswField", priority=4)
     public void RegistrationPswTest(String pswString, String MsgPsw, String MsgLogin, String MsgEm) throws InterruptedException {
 
         Reporter.log("*");
         Reporter.log(pswString);
         Reporter.log("*");
 
+        ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
+        checkNewTabsAndDeleting();
         WebElement emailInput = driver.findElement(By.id("email"));
         WebElement nameInput = driver.findElement(By.id("name"));
         WebElement pswInput = driver.findElement(By.id("password1"));
@@ -273,13 +290,4 @@ public class RegistrationFormFieldsTest extends BaseTest{
 
     }
 
-
-
-
-    /* КОД ВЫПОЛНЯЮЩИЙСЯ ПОСЛЕ ТЕСТОВ */
-    //-----------------------------------Test TearDown-----------------------------------
-    @AfterClass
-    public void teardownTest() {
-        driver.quit();  // ЗАКРЫТИЕ БРАУЗЕРА
-    }
 }

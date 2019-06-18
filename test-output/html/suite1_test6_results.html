@@ -3,54 +3,61 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
 <head>
-  <title>Test Results Report - Тест добавления оценки [Chrome]</title>
+  <title>Test Results Report - Тест добавления закладки [Chrome]</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="description" content="TestNG unit test results." />
   <link href="reportng.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="reportng.js"></script>
 </head>
 <body>
-<h1>Тест добавления оценки [Chrome]</h1>
+<h1>Тест добавления закладки [Chrome]</h1>
 <p>
-  Test duration: 0,399s
+  Test duration: 176,295s
 </p>
 
-  <table class="resultsTable configTable">
-    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
-              <tr class="group">
-        <td colspan="3">AddingMarkForFilmTest</td>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">BookmarksTest</td>
       </tr>
             
 <tr>
   <td class="method">
-                  setUp
+                  AddCheckBookmarkTest
       </td>
   <td class="duration">
-    0,000s
+    40,110s
   </td>
   <td class="result">
         
-          <i>Method arguments: </i><span class="arguments">"1", "0", "", "", "", "", "remote"</span><br />
     
-        
+            <div class="testOutput">
+                        <br />
+                                ---------------------------------------------------------------------<br />
+                                ПРОВЕРКА ПОЯВЛЕНИЯ ДОБАВЛЕННОГО ФИЛЬМА В ЗАКЛАДКАХ<br />
+                                ---------------------------------------------------------------------<br />
+                                Проверка наличия кнопки перехода в раздел закладок<br />
+                  </div>
+    
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.net.MalformedURLException: no protocol: </b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Нет кнопки перехода закладки expected [true] but found [false]</b></a><br />
     <div class="stackTrace" id="exception-0">
-              java.net.URL.&lt;init&gt;(URL.java:593)<br />
-              java.net.URL.&lt;init&gt;(URL.java:490)<br />
-              java.net.URL.&lt;init&gt;(URL.java:439)<br />
-              BaseTest.getRemoteDriver(BaseTest.java:108)<br />
-              BaseTest.setUp(BaseTest.java:149)<br />
+              org.testng.Assert.fail(Assert.java:94)<br />
+              org.testng.Assert.failNotEquals(Assert.java:494)<br />
+              org.testng.Assert.assertTrue(Assert.java:42)<br />
+              BookmarksTest.AddCheckBookmarkTest(BookmarksTest.java:158)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
               java.lang.reflect.Method.invoke(Method.java:498)<br />
               org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
-              org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)<br />
-              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)<br />
-              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)<br />
-              org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
               org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
               org.testng.TestRunner.run(TestRunner.java:617)<br />
               org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
@@ -64,49 +71,52 @@
                 </div>
       </td>
 </tr>
-    
-          <tr><td colspan="3">&nbsp;</td></tr>
-      <tr><td colspan="3" class="header skippedConfig">Skipped Configuration</td></tr>
-                    <tr>
-          <td colspan="3" class="group">AddingMarkForFilmTest</td>
-        </tr>
-                
 <tr>
   <td class="method">
-                  tearDown
+                  AddingBookmarkTest
       </td>
   <td class="duration">
-    0,000s
+    42,140s
   </td>
   <td class="result">
-                               
-    
         
-
-      </td>
-</tr>
-            </table>
-
-
-
-  <table class="resultsTable" width="100%">
-    <tr><th colspan="3" class="header skipped">Skipped Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">AddingMarkForFilmTest</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  AddingMarkForFilm
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
     
-        
+            <div class="testOutput">
+                        ---------------------------------------------------------------------<br />
+                                ДОБАВЛЕНИЕ ФИЛЬМА В ЗАКЛАДКИ<br />
+                                ---------------------------------------------------------------------<br />
+                                Переход на страницу первого фильма на главной странице<br />
+                                Проверка наличия кнопки добавления в закладки<br />
+                  </div>
+    
 
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Нет кнопки добавления в закладки expected [true] but found [false]</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              org.testng.Assert.fail(Assert.java:94)<br />
+              org.testng.Assert.failNotEquals(Assert.java:494)<br />
+              org.testng.Assert.assertTrue(Assert.java:42)<br />
+              BookmarksTest.AddingBookmarkTest(BookmarksTest.java:90)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:37)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)<br />
+              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
+              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br />
+              java.lang.Thread.run(Thread.java:748)<br />
+                </div>
       </td>
 </tr>
 <tr>
@@ -114,16 +124,101 @@
                   AuthorizationOnTheSite
       </td>
   <td class="duration">
-    0,399s
+    47,499s
   </td>
   <td class="result">
-                               
-    
         
+    
+            <div class="testOutput">
+                        ---------------------------------------------------------------------<br />
+                                АВТОРИЗАЦИЯ НА САЙТЕ<br />
+                                ---------------------------------------------------------------------<br />
+                                Открытие главной страницы<br />
+                                Начало авторизации<br />
+                                Проверка наличия кнопки открытия формы для авторизации<br />
+                                Нажатие на кнопку авторизации<br />
+                                Проверка появления формы авторизации<br />
+                  </div>
+    
 
+        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Нет формы авторизации expected [true] but found [false]</b></a><br />
+    <div class="stackTrace" id="exception-2">
+              org.testng.Assert.fail(Assert.java:94)<br />
+              org.testng.Assert.failNotEquals(Assert.java:494)<br />
+              org.testng.Assert.assertTrue(Assert.java:42)<br />
+              BookmarksTest.AuthorizationOnTheSite(BookmarksTest.java:36)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:37)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)<br />
+              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
+              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br />
+              java.lang.Thread.run(Thread.java:748)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  DelletingBookmarkTest
+      </td>
+  <td class="duration">
+    40,067s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        ---------------------------------------------------------------------<br />
+                                УДАЛЕНИЕ ФИЛЬМА ИЗ ЗАКЛАДОК<br />
+                                ---------------------------------------------------------------------<br />
+                                Проверка наличия чекбокса удаления<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Нет кнопки удаления фильма из закладок expected [true] but found [false]</b></a><br />
+    <div class="stackTrace" id="exception-3">
+              org.testng.Assert.fail(Assert.java:94)<br />
+              org.testng.Assert.failNotEquals(Assert.java:494)<br />
+              org.testng.Assert.assertTrue(Assert.java:42)<br />
+              BookmarksTest.DelletingBookmarkTest(BookmarksTest.java:189)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:37)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)<br />
+              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
+              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br />
+              java.lang.Thread.run(Thread.java:748)<br />
+                </div>
       </td>
 </tr>
       </table>
+
 
   
 </body>

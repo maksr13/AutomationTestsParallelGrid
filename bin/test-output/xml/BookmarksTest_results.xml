@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BookmarksTest1"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="60,378">
+  <properties />
+  
+  
+            <testcase name="AuthorizationOnTheSite" time="20,461" classname="BookmarksTest" />
+                <testcase name="DelletingBookmarkTest" time="36,005" classname="BookmarksTest" />
+                <testcase name="AddingBookmarkTest" time="3,912" classname="BookmarksTest" />
+      
+</testsuite>

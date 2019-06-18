@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!--    PARAMETERS
+        Browser
+        1 - Chrome
+        2 - Firefox
+        3 - Opera
+        4 - IE
+        5 - Chrome Headless
+        6 - Firefox Headless
+        7 - Opera Headless
+        8 - IE Headless
+
+        Platform
+        1  - ANDROID
+        2  - IOS
+        3  - LINUX
+        4  - MAC
+        5  - UNIX
+        6  - VISTA
+        7  - WIN8
+        8  - WIN8_1
+        9  - WIN10
+        10 - WINDOWS
+        11 - XP
+        0  - ANY
+
+        Mode:
+        local - запуск теста на локальной машине
+        remote - запуск теста на удаленной машине
+-->
+
+<!-- parallel="tests" thread-count="2" verbose="1" parallel="tests" thread-count="3"-->
+
+<suite name="AllTestsSuite">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+
+    <parameter name="platform" value="0"/>
+    <parameter name="SpecialParameter" value=""/>
+    <parameter name="mode" value="local"/>
+    <parameter name="Log" value=""/>
+    <parameter name="Psw" value=""/>
+    <parameter name="NodeAdress" value="http://192.168.0.101:4445/wd/hub"/>
+
+    <!--**1**________________________________________________________________-->
+
+    <!--________________________________________________________________-->
+    <test name="Тест регистрационной формы на валидность [Chrome]">
+        <parameter name="selenium.browser" value="1"/>
+        <classes>
+            <class name="RegistrationFormFieldsTest"/>
+        </classes>
+    </test>
+
+</suite>
+
+
+
+
+

@@ -14,7 +14,27 @@ import org.testng.annotations.*;
 public class VerifyLinks extends BaseTest {
 
     static private List<WebElement> links;
+    //static private  List<String> urls = new ArrayList<String>();
 
+   /* public String VerifyLinkFunc(String urlLink) {
+        //Sometimes we may face exception "java.net.MalformedURLException". Keep the code in try catch block to continue the broken link analysis
+        try {
+            //Use URL Class - Create object of the URL Class and pass the urlLink as parameter
+            URL link = new URL(urlLink);
+            // Create a connection using URL object (i.e., link)
+            HttpURLConnection httpConn = (HttpURLConnection) link.openConnection();
+            //Set the timeout for 2 seconds
+            httpConn.setConnectTimeout(2000);
+            //connect using connect method
+            httpConn.connect();
+            return httpConn.getResponseMessage();
+        }
+//getResponseCode method returns = IOException - if an error occurred connecting to the server.
+        catch (Exception e) {
+            //e.printStackTrace();
+        }
+        return "Error";
+    }*/
 
    @BeforeClass
    public void GetLinks() throws InterruptedException {
@@ -22,6 +42,9 @@ public class VerifyLinks extends BaseTest {
 
        Thread.sleep(8);
        links = driver.findElements(By.tagName("a"));
+       /*for(int i=0; i<links.size(); i++){
+           urls.add(links.get(i).getAttribute("href"));
+       }*/
    }
 
     @DataProvider

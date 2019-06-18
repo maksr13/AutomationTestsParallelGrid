@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="85c43263-f4a9-4499-a39d-6fc2907e68c4" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/BookmarksTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="162" column="39" selection-start-line="162" selection-start-column="16" selection-end-line="162" selection-end-column="39" />
+              <folding>
+                <element signature="method#AuthorizationOnTheSite#0;class#BookmarksTest#0" />
+                <element signature="method#AddingBookmarkTest#0;class#BookmarksTest#0" />
+                <element signature="method#AddCheckBookmarkTest#0;class#BookmarksTest#0" />
+                <element signature="method#DelletingBookmarkTest#0;class#BookmarksTest#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/RegistrationFormFieldsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1071">
+              <caret line="236" column="52" selection-start-line="236" selection-start-column="36" selection-end-line="236" selection-end-column="52" />
+              <folding>
+                <element signature="method#GoToRegistrationForm#0;class#RegistrationFormFieldsTest#0" />
+                <element signature="method#RegistrationEmailTest#0;class#RegistrationFormFieldsTest#0" />
+                <element signature="method#DataForTestLoginField#0;class#RegistrationFormFieldsTest#0" />
+                <element signature="method#RegistrationLoginTest#0;class#RegistrationFormFieldsTest#0" />
+                <element signature="method#DataForTestPswField#0;class#RegistrationFormFieldsTest#0" />
+                <element signature="method#RegistrationPswTest#0;class#RegistrationFormFieldsTest#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/VerifyLinks.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="62" column="42" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="42" />
+              <folding>
+                <element signature="method#GetLinks#0;class#VerifyLinks#0" />
+                <element signature="method#DataForVerifyAllLinks#0;class#VerifyLinks#0" />
+                <element signature="method#VerifyAllLinks#0;class#VerifyLinks#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/BaseTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="136" selection-start-line="136" selection-end-line="136" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LocalRun.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LocalHeadlessRun.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="66" column="11" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RemoteRun.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/WatchFilmLaterTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="67" column="42" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="42" />
+              <folding>
+                <element signature="method#AuthorizationOnTheSite#0;class#WatchFilmLaterTest#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/UserCommentingTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="161" column="38" selection-start-line="161" selection-start-column="16" selection-end-line="161" selection-end-column="38" />
+              <folding>
+                <element signature="method#AuthorizationOnTheSite#0;class#UserCommentingTest#0" />
+                <element signature="method#AddingCommentTest#0;class#UserCommentingTest#0" />
+                <element signature="method#EditingCommentTest#0;class#UserCommentingTest#0" />
+                <element signature="method#DelletingCommentTest#0;class#UserCommentingTest#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/AddingMarkForFilmTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="62" column="35" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="35" />
+              <folding>
+                <element signature="method#AuthorizationOnTheSite#0;class#AddingMarkForFilmTest#0" />
+                <element signature="method#AddingMarkForFilm#0;class#AddingMarkForFilmTest#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/test/java/WatchFilmLaterTest.java" />
+        <option value="$PROJECT_DIR$/Новый текстовый документ.txt" />
+        <option value="$PROJECT_DIR$/src/test/java/BaseTest.java" />
+        <option value="$PROJECT_DIR$/LocalHeadlessRun.xml" />
+        <option value="$PROJECT_DIR$/RemoteRun.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="232" />
+    <option name="y" value="-13" />
+    <option name="width" value="699" />
+    <option name="height" value="694" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="TestNGPr1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestNGPr2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestNGPr1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestNGPr2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestNGPr1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestNGPr2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestNGPr1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestNGPr2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestNGPr1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestNGPr2" type="462c0819:PsiDirectoryNode" />
+              <item name="test-output" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559413291414" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/LocalRun.xml" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="TestNG" nameIsGenerated="true">
+      <module name="TestNGPr1" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/LocalRun.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="85c43263-f4a9-4499-a39d-6fc2907e68c4" name="Default Changelist" comment="" />
+      <created>1558788809436</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1558788809436</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Unnamed - 2019.05.28 at 15h 22m 41s.xml">
+      <configuration name="Unnamed" configurationId="TestNG" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32843137" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32843137" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Новый текстовый документ.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SystemForTesting.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="33" lean-forward="true" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AddingMarkForFilmTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="62" column="35" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="35" />
+          <folding>
+            <element signature="method#AuthorizationOnTheSite#0;class#AddingMarkForFilmTest#0" />
+            <element signature="method#AddingMarkForFilm#0;class#AddingMarkForFilmTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/BookmarksTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="162" column="39" selection-start-line="162" selection-start-column="16" selection-end-line="162" selection-end-column="39" />
+          <folding>
+            <element signature="method#AuthorizationOnTheSite#0;class#BookmarksTest#0" />
+            <element signature="method#AddingBookmarkTest#0;class#BookmarksTest#0" />
+            <element signature="method#AddCheckBookmarkTest#0;class#BookmarksTest#0" />
+            <element signature="method#DelletingBookmarkTest#0;class#BookmarksTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/UserCommentingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="161" column="38" selection-start-line="161" selection-start-column="16" selection-end-line="161" selection-end-column="38" />
+          <folding>
+            <element signature="method#AuthorizationOnTheSite#0;class#UserCommentingTest#0" />
+            <element signature="method#AddingCommentTest#0;class#UserCommentingTest#0" />
+            <element signature="method#EditingCommentTest#0;class#UserCommentingTest#0" />
+            <element signature="method#DelletingCommentTest#0;class#UserCommentingTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/VerifyLinks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="62" column="42" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="42" />
+          <folding>
+            <element signature="method#GetLinks#0;class#VerifyLinks#0" />
+            <element signature="method#DataForVerifyAllLinks#0;class#VerifyLinks#0" />
+            <element signature="method#VerifyAllLinks#0;class#VerifyLinks#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/WatchFilmLaterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="67" column="42" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="42" />
+          <folding>
+            <element signature="method#AuthorizationOnTheSite#0;class#WatchFilmLaterTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="136" selection-start-line="136" selection-end-line="136" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LocalRun.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LocalHeadlessRun.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="66" column="11" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RemoteRun.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RegistrationFormFieldsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="236" column="52" selection-start-line="236" selection-start-column="36" selection-end-line="236" selection-end-column="52" />
+          <folding>
+            <element signature="method#GoToRegistrationForm#0;class#RegistrationFormFieldsTest#0" />
+            <element signature="method#RegistrationEmailTest#0;class#RegistrationFormFieldsTest#0" />
+            <element signature="method#DataForTestLoginField#0;class#RegistrationFormFieldsTest#0" />
+            <element signature="method#RegistrationLoginTest#0;class#RegistrationFormFieldsTest#0" />
+            <element signature="method#DataForTestPswField#0;class#RegistrationFormFieldsTest#0" />
+            <element signature="method#RegistrationPswTest#0;class#RegistrationFormFieldsTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

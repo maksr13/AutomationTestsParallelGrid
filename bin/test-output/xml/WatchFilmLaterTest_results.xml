@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="WatchFilmLaterTest1"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="136,188">
+  <properties />
+  
+  
+            <testcase name="AddingWatchFilmLaterTest" time="112,486" classname="WatchFilmLaterTest" />
+                <testcase name="AuthorizationOnTheSite" time="23,702" classname="WatchFilmLaterTest" />
+      
+</testsuite>

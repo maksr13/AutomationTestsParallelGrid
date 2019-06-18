@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!--    PARAMETERS
+        Browser
+        1 - Chrome
+        2 - Firefox
+        3 - Opera
+        4 - IE
+        5 - Chrome Headless
+        6 - Firefox Headless
+        7 - Opera Headless
+        8 - IE Headless
+
+        Platform
+        1  - ANDROID
+        2  - IOS
+        3  - LINUX
+        4  - MAC
+        5  - UNIX
+        6  - VISTA
+        7  - WIN8
+        8  - WIN8_1
+        9  - WIN10
+        10 - WINDOWS
+        11 - XP
+        0  - ANY
+
+        Mode:
+        local - запуск теста на локальной машине
+        remote - запуск теста на удаленной машине
+-->
+
+<!-- parallel="tests" thread-count="2" verbose="1" parallel="tests" thread-count="3"-->
+
+<suite name="AllTestsSuite" parallel="tests" thread-count="10">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+
+    <parameter name="platform" value="0"/>
+    <parameter name="SpecialParameter" value=""/>
+    <parameter name="mode" value="remote"/>
+    <parameter name="Log" value=""/>
+    <parameter name="Psw" value=""/>
+    <parameter name="NodeAdress" value="http://192.168.0.101:4445/wd/hub"/>
+
+    <!--**1**________________________________________________________________-->
+
+    <!--________________________________________________________________-->
+    <test name="Тест добавления закладки [Chrome]">
+        <parameter name="selenium.browser" value="1"/>
+        <parameter name="Log" value="Maks13"/>
+        <parameter name="Psw" value="rtzh37h1c2m"/>
+        <classes>
+            <class name="BookmarksTest"/>
+        </classes>
+    </test>
+    <test name="Тест добавления закладки [Firefox]">
+        <parameter name="selenium.browser" value="2"/>
+        <parameter name="Log" value="Maks14"/>
+        <parameter name="Psw" value="rtzh37h1c2m1"/>
+        <classes>
+            <class name="BookmarksTest"/>
+        </classes>
+    </test>-
+    <test name="Тест добавления закладки [Opera]">
+        <parameter name="selenium.browser" value="3"/>
+        <parameter name="Log" value="maxRozhko@ukr.net"/>
+        <parameter name="Psw" value="923837psq0z"/>
+        <classes>
+            <class name="BookmarksTest"/>
+        </classes>
+    </test>
+    <!--________________________________________________________________-->
+    <test name="Тест регистрационной формы на валидность [Chrome]">
+        <parameter name="selenium.browser" value="1"/>
+        <classes>
+            <class name="RegistrationFormFieldsTest"/>
+        </classes>
+    </test>
+    <test name="Тест регистрационной формы на валидность [Firefox]">
+        <parameter name="selenium.browser" value="2"/>
+        <classes>
+            <class name="RegistrationFormFieldsTest"/>
+        </classes>
+    </test>
+    <test name="Тест регистрационной формы на валидность [Opera]">
+        <parameter name="selenium.browser" value="3"/>
+        <classes>
+            <class name="RegistrationFormFieldsTest"/>
+        </classes>
+    </test>
+
+    <!--________________________________________________________________-->
+
+    <test name="Проверка всех ссылок на главной странице [Chrome]">
+        <parameter name="selenium.browser" value="1"/>
+        <classes>
+            <class name="VerifyLinks"/>
+        </classes>
+    </test>
+
+    <!--**2**________________________________________________________________-->
+
+    <!--________________________________________________________________-->
+    <test name="Тест добавления закладки [Chrome]2">
+        <parameter name="selenium.browser" value="1"/>
+        <parameter name="Log" value="Maks13"/>
+        <parameter name="Psw" value="rtzh37h1c2m"/>
+        <classes>
+            <class name="BookmarksTest"/>
+        </classes>
+    </test>
+    <test name="Тест добавления закладки [Firefox]2">
+        <parameter name="selenium.browser" value="2"/>
+        <parameter name="Log" value="Maks14"/>
+        <parameter name="Psw" value="rtzh37h1c2m1"/>
+        <classes>
+            <class name="BookmarksTest"/>
+        </classes>
+    </test>-
+    <test name="Тест добавления закладки [Opera]2">
+        <parameter name="selenium.browser" value="3"/>
+        <parameter name="Log" value="maxRozhko@ukr.net"/>
+        <parameter name="Psw" value="923837psq0z"/>
+        <classes>
+            <class name="BookmarksTest"/>
+        </classes>
+    </test>
+    <!--________________________________________________________________-->
+    <test name="Тест регистрационной формы на валидность [Chrome]2">
+        <parameter name="selenium.browser" value="1"/>
+        <classes>
+            <class name="RegistrationFormFieldsTest"/>
+        </classes>
+    </test>
+    <test name="Тест регистрационной формы на валидность [Firefox]2">
+        <parameter name="selenium.browser" value="2"/>
+        <classes>
+            <class name="RegistrationFormFieldsTest"/>
+        </classes>
+    </test>
+    <test name="Тест регистрационной формы на валидность [Opera]2">
+        <parameter name="selenium.browser" value="3"/>
+        <classes>
+            <class name="RegistrationFormFieldsTest"/>
+        </classes>
+    </test>
+
+    <!--________________________________________________________________-->
+
+    <test name="Проверка всех ссылок на главной странице [Chrome]2">
+        <parameter name="selenium.browser" value="1"/>
+        <classes>
+            <class name="VerifyLinks"/>
+        </classes>
+    </test>
+
+
+    <!--**3**________________________________________________________________-->
+
+    <!--________________________________________________________________-->
+    <test name="Тест добавления закладки [Chrome]3">
+        <parameter name="selenium.browser" value="1"/>
+        <parameter name="Log" value="Maks13"/>
+        <parameter name="Psw" value="rtzh37h1c2m"/>
+        <classes>
+            <class name="BookmarksTest"/>
+        </classes>
+    </test>
+    <test name="Тест добавления закладки [Firefox]3">
+        <parameter name="selenium.browser" value="2"/>
+        <parameter name="Log" value="Maks14"/>
+        <parameter name="Psw" value="rtzh37h1c2m1"/>
+        <classes>
+            <class name="BookmarksTest"/>
+        </classes>
+    </test>-
+    <test name="Тест добавления закладки [Opera]3">
+        <parameter name="selenium.browser" value="3"/>
+        <parameter name="Log" value="maxRozhko@ukr.net"/>
+        <parameter name="Psw" value="923837psq0z"/>
+        <classes>
+            <class name="BookmarksTest"/>
+        </classes>
+    </test>
+    <!--________________________________________________________________-->
+    <test name="Тест регистрационной формы на валидность [Chrome]3">
+        <parameter name="selenium.browser" value="1"/>
+        <classes>
+            <class name="RegistrationFormFieldsTest"/>
+        </classes>
+    </test>
+    <test name="Тест регистрационной формы на валидность [Firefox]3">
+        <parameter name="selenium.browser" value="2"/>
+        <classes>
+            <class name="RegistrationFormFieldsTest"/>
+        </classes>
+    </test>
+    <test name="Тест регистрационной формы на валидность [Opera]3">
+        <parameter name="selenium.browser" value="3"/>
+        <classes>
+            <class name="RegistrationFormFieldsTest"/>
+        </classes>
+    </test>
+
+    <!--________________________________________________________________-->
+
+    <test name="Проверка всех ссылок на главной странице [Chrome]3">
+        <parameter name="selenium.browser" value="1"/>
+        <classes>
+            <class name="VerifyLinks"/>
+        </classes>
+    </test>
+</suite>
+
+
+
+
+

@@ -4,6 +4,8 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
+
 public class WatchFilmLaterTest  extends BaseTest{
 
 
@@ -11,7 +13,7 @@ public class WatchFilmLaterTest  extends BaseTest{
 
     //-----------------------------------Tests-----------------------------------
     @Test(priority=1)
-    public void AuthorizationOnTheSite(){
+    public void AuthorizationOnTheSite() throws InterruptedException{
 
         Reporter.log("---------------------------------------------------------------------");
         Reporter.log("АВТОРИЗАЦИЯ НА САЙТЕ");
@@ -29,6 +31,14 @@ public class WatchFilmLaterTest  extends BaseTest{
             Reporter.log("Нажатие на кнопку авторизации");
             WebElement AuthButton = driver.findElement(By.cssSelector("#top-head > div > div.b-tophead-right.pull-right > a.b-tophead__login"));
             ((WebElement) AuthButton).click();
+
+            Thread.sleep(1000);
+            ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
+            if(tabs.size() > 1){
+                driver.switchTo().window(tabs.get(1));
+                driver.close();
+                driver.switchTo().window(tabs.get(0));
+            }
 
             Reporter.log("Проверка появления формы авторизации");
             Assert.assertTrue(driver.findElement(By.cssSelector("#login-popup")).getAttribute("style").equals("") != true, "Нет формы авторизации");
@@ -75,8 +85,15 @@ public class WatchFilmLaterTest  extends BaseTest{
         Reporter.log("Сохранение количества фильмов в разделе Досмотреть (счетчик на верхней панеле)");
         int CurrentAmtFilms = Integer.parseInt(driver.findElement(By.id("saves-count")).getText());
 
-        Reporter.log("Переход на страницу первого фильма на главной странице");
+        Reporter.log("Переход на страницу фильма заданного в параметре .xml документа");
         driver.get(SpecialParameterForTest);
+
+        ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
+        if(tabs.size() > 1){
+            driver.switchTo().window(tabs.get(1));
+            driver.close();
+            driver.switchTo().window(tabs.get(0));
+        }
 
         Thread.sleep(400);
         Reporter.log("Проверка наличия плеера");
@@ -85,14 +102,14 @@ public class WatchFilmLaterTest  extends BaseTest{
         driver.findElement(By.cssSelector("div[class = \"b-player\"]")).click();
         driver.findElement(By.cssSelector("div[class = \"b-player\"]")).click();
 
-        Thread.sleep(105000);
+        Thread.sleep(80000);
 
         Reporter.log("Проверка увеличения счетчика количества фильмов в разделе Досмотреть");
         Assert.assertTrue(Integer.parseInt(driver.findElement(By.id("saves-count")).getText()) == CurrentAmtFilms+1, "Счетчик количества фильмов в разделе Досмотреть не увеличился ");
 
         NameOfFilm = driver.findElement(By.cssSelector("#main > div.b-container.b-wrapper > div > div.b-content__columns.pdt.clearfix > div.b-content__main > div.b-post__title > h1")).getText();
 
-        Assert.assertTrue(driver.findElements(By.cssSelector("div[class = \"b-player\"]")).size() > 0, "Нет плеера");
+        //Assert.assertTrue(driver.findElements(By.cssSelector("div[class = \"b-player\"]")).size() > 0, "Нет плеера");
 
 
         Reporter.log("Переход в раздел Досмотреть");
@@ -112,25 +129,4 @@ public class WatchFilmLaterTest  extends BaseTest{
         Reporter.log("---------------------------------------------------------------------");
     }
 
-   /* @Test(priority=3)
-    public void DelletingWatchFilmLaterTest()  throws InterruptedException{
-
-        Reporter.log("---------------------------------------------------------------------");
-        Reporter.log("УДАЛЕНИЕ ФИЛЬМА ИЗ РАЗДЕЛА ДОСМОТРЕТЬ");
-        Reporter.log("---------------------------------------------------------------------");
-
-
-       driver.findElement(By.cssSelector("div[class =\"b-videosaves__list_item\"] div[class = \"controls-holder\"]  a[title = \"Удалить сохранение\"]")).click();
-
-       driver.navigate().refresh();
-
-       String NameOfFilmCurrent = driver.findElement(By.cssSelector("div[class = \"b-videosaves__list_item\"] > div[class = \"td title\"] > a")).getText();
-       Reporter.log("Проверка удаления фильма");
-       Assert.assertTrue(NameOfFilmCurrent.equals(NameOfFilm), "Фильм не был удален");
-
-        Reporter.log("");
-        Reporter.log("---------------------------------------------------------------------");
-        Reporter.log("ТЕСТ УСПЕШНО ПРОЙДЕН");
-        Reporter.log("---------------------------------------------------------------------");
-    }*/
 }

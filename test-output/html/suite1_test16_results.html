@@ -3,54 +3,75 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
 <head>
-  <title>Test Results Report - Тест добавления комментария [Opera]</title>
+  <title>Test Results Report - Тест регистрационной формы на валидность [Firefox]2</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="description" content="TestNG unit test results." />
   <link href="reportng.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="reportng.js"></script>
 </head>
 <body>
-<h1>Тест добавления комментария [Opera]</h1>
+<h1>Тест регистрационной формы на валидность [Firefox]2</h1>
 <p>
-  Test duration: 0,001s
+  Test duration: 445,937s
 </p>
 
-  <table class="resultsTable configTable">
-    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
-              <tr class="group">
-        <td colspan="3">UserCommentingTest</td>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">RegistrationFormFieldsTest</td>
       </tr>
             
 <tr>
   <td class="method">
-                  setUp
+                  GoToRegistrationForm
       </td>
   <td class="duration">
-    0,000s
+    8,118s
   </td>
   <td class="result">
         
-          <i>Method arguments: </i><span class="arguments">"3", "0", "", "", "", "", "remote"</span><br />
     
-        
+            <div class="testOutput">
+                        ---------------------------------------------------------------------<br />
+                                ПЕРЕХОД НА РЕГИСТР. ФОРМУ И ПРОВЕРКА НАЛИЧИЯ ПОЛЕЙ<br />
+                                ---------------------------------------------------------------------<br />
+                                Открытие главной страницы<br />
+                                Проверка наличия кнопки открытия формы для регистриции<br />
+                                Нажатие на кнопку регистрации<br />
+                  </div>
+    
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.net.MalformedURLException: no protocol: </b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementClickInterceptedException: Element &lt;a class=&quot;b-tophead__register&quot; href=&quot;javascript:void(0)&quot;&gt; is not clickable at point (1075,270) because another element &lt;div id=&quot;overlay&quot;&gt; obscures it<br/>
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;<br/>
+System info: host: &apos;MAKSPC&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;<br/>
+Driver info: org.openqa.selenium.remote.RemoteWebDriver<br/>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.5, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 8516, moz:profile: C:\Users\Светлана\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 28805d05-3693-4802-abe1-264...}<br/>
+Session ID: 28805d05-3693-4802-abe1-2646016fd570</b></a><br />
     <div class="stackTrace" id="exception-0">
-              java.net.URL.&lt;init&gt;(URL.java:593)<br />
-              java.net.URL.&lt;init&gt;(URL.java:490)<br />
-              java.net.URL.&lt;init&gt;(URL.java:439)<br />
-              BaseTest.getRemoteDriver(BaseTest.java:116)<br />
-              BaseTest.setUp(BaseTest.java:149)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)<br />
+              RegistrationFormFieldsTest.GoToRegistrationForm(RegistrationFormFieldsTest.java:38)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
               java.lang.reflect.Method.invoke(Method.java:498)<br />
               org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
-              org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)<br />
-              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)<br />
-              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)<br />
-              org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
               org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
               org.testng.TestRunner.run(TestRunner.java:617)<br />
               org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
@@ -64,95 +85,1800 @@
                 </div>
       </td>
 </tr>
-    
-          <tr><td colspan="3">&nbsp;</td></tr>
-      <tr><td colspan="3" class="header skippedConfig">Skipped Configuration</td></tr>
-                    <tr>
-          <td colspan="3" class="group">UserCommentingTest</td>
-        </tr>
-                
 <tr>
   <td class="method">
-                  tearDown
+                  RegistrationEmailTest
       </td>
   <td class="duration">
-    0,000s
+    6,192s
   </td>
   <td class="result">
-                               
-    
         
-
-      </td>
-</tr>
-            </table>
-
-
-
-  <table class="resultsTable" width="100%">
-    <tr><th colspan="3" class="header skipped">Skipped Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">UserCommentingTest</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  AddingCommentTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
+          <i>Method arguments: </i><span class="arguments">""unusual"@email.com", "Можно использовать данный email для регистрации", "Данный email уже зарегистрирован", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
     
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  AuthorizationOnTheSite
-      </td>
-  <td class="duration">
-    0,001s
-  </td>
-  <td class="result">
-                               
+            <div class="testOutput">
+                        *<br />
+                                &quot;unusual&quot;@email.com<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле email<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                  </div>
     
-        
 
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Не выведенно корректное сообщение, или выведенное сообщение - некорректно expected [true] but found [false]</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              org.testng.Assert.fail(Assert.java:94)<br />
+              org.testng.Assert.failNotEquals(Assert.java:494)<br />
+              org.testng.Assert.assertTrue(Assert.java:42)<br />
+              RegistrationFormFieldsTest.RegistrationEmailTest(RegistrationFormFieldsTest.java:143)<br />
+              sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:37)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)<br />
+              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
+              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br />
+              java.lang.Thread.run(Thread.java:748)<br />
+                </div>
       </td>
 </tr>
 <tr>
   <td class="method">
-                  DelletingCommentTest
+                  RegistrationEmailTest
       </td>
   <td class="duration">
-    0,000s
+    4,982s
   </td>
   <td class="result">
-                               
-    
         
+          <i>Method arguments: </i><span class="arguments">"" "@email.com", "Можно использовать данный email для регистрации", "Данный email уже зарегистрирован", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                &quot; &quot;@email.com<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле email<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                  </div>
+    
 
+        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Не выведенно корректное сообщение, или выведенное сообщение - некорректно expected [true] but found [false]</b></a><br />
+    <div class="stackTrace" id="exception-2">
+              org.testng.Assert.fail(Assert.java:94)<br />
+              org.testng.Assert.failNotEquals(Assert.java:494)<br />
+              org.testng.Assert.assertTrue(Assert.java:42)<br />
+              RegistrationFormFieldsTest.RegistrationEmailTest(RegistrationFormFieldsTest.java:143)<br />
+              sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:37)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)<br />
+              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
+              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br />
+              java.lang.Thread.run(Thread.java:748)<br />
+                </div>
       </td>
 </tr>
 <tr>
   <td class="method">
-                  EditingCommentTest
+                  RegistrationEmailTest
       </td>
   <td class="duration">
-    0,000s
+    5,276s
   </td>
   <td class="result">
-                               
-    
         
+          <i>Method arguments: </i><span class="arguments">"user@[IPv6:2001:DB8::1]", "Можно использовать данный email для регистрации", "Данный email уже зарегистрирован", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                user@[IPv6:2001:DB8::1]<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле email<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                  </div>
+    
 
+        <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Не выведенно корректное сообщение, или выведенное сообщение - некорректно expected [true] but found [false]</b></a><br />
+    <div class="stackTrace" id="exception-3">
+              org.testng.Assert.fail(Assert.java:94)<br />
+              org.testng.Assert.failNotEquals(Assert.java:494)<br />
+              org.testng.Assert.assertTrue(Assert.java:42)<br />
+              RegistrationFormFieldsTest.RegistrationEmailTest(RegistrationFormFieldsTest.java:143)<br />
+              sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:37)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)<br />
+              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
+              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br />
+              java.lang.Thread.run(Thread.java:748)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationEmailTest
+      </td>
+  <td class="duration">
+    4,357s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"plus+symbol@email.com", "Можно использовать данный email для регистрации", "Данный email уже зарегистрирован", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                plus+symbol@email.com<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле email<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-4', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Не выведенно корректное сообщение, или выведенное сообщение - некорректно expected [true] but found [false]</b></a><br />
+    <div class="stackTrace" id="exception-4">
+              org.testng.Assert.fail(Assert.java:94)<br />
+              org.testng.Assert.failNotEquals(Assert.java:494)<br />
+              org.testng.Assert.assertTrue(Assert.java:42)<br />
+              RegistrationFormFieldsTest.RegistrationEmailTest(RegistrationFormFieldsTest.java:143)<br />
+              sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:37)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)<br />
+              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
+              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br />
+              java.lang.Thread.run(Thread.java:748)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationEmailTest
+      </td>
+  <td class="duration">
+    4,473s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"test@emailServer", "Можно использовать данный email для регистрации", "Данный email уже зарегистрирован", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                test@emailServer<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле email<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-5', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Не выведенно корректное сообщение, или выведенное сообщение - некорректно expected [true] but found [false]</b></a><br />
+    <div class="stackTrace" id="exception-5">
+              org.testng.Assert.fail(Assert.java:94)<br />
+              org.testng.Assert.failNotEquals(Assert.java:494)<br />
+              org.testng.Assert.assertTrue(Assert.java:42)<br />
+              RegistrationFormFieldsTest.RegistrationEmailTest(RegistrationFormFieldsTest.java:143)<br />
+              sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:37)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)<br />
+              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
+              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br />
+              java.lang.Thread.run(Thread.java:748)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationLoginTest
+      </td>
+  <td class="duration">
+    4,124s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"1log", "Можно использовать данный логин для регистрации", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                1log<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле login<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-6', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Не выведенно корректное сообщение, или выведенное сообщение - некорректно expected [true] but found [false]</b></a><br />
+    <div class="stackTrace" id="exception-6">
+              org.testng.Assert.fail(Assert.java:94)<br />
+              org.testng.Assert.failNotEquals(Assert.java:494)<br />
+              org.testng.Assert.assertTrue(Assert.java:42)<br />
+              RegistrationFormFieldsTest.RegistrationLoginTest(RegistrationFormFieldsTest.java:224)<br />
+              sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:37)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)<br />
+              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
+              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br />
+              java.lang.Thread.run(Thread.java:748)<br />
+                </div>
       </td>
 </tr>
       </table>
 
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">RegistrationFormFieldsTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  RegistrationEmailTest
+      </td>
+  <td class="duration">
+    5,641s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"simple.email@email.com", "Можно использовать данный email для регистрации", "Данный email уже зарегистрирован", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                simple.email@email.com<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле email<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationEmailTest
+      </td>
+  <td class="duration">
+    4,630s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"invalid@test@email.com", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                invalid@test@email.com<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле email<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationEmailTest
+      </td>
+  <td class="duration">
+    6,158s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"invalid.@email.com", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                invalid.@email.com<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле email<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationEmailTest
+      </td>
+  <td class="duration">
+    4,546s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"asdfasdfasdfasdfasdf", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                asdfasdfasdfasdfasdf<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле email<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationEmailTest
+      </td>
+  <td class="duration">
+    4,818s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"invalid@test@email.com", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                invalid@test@email.com<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле email<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationEmailTest
+      </td>
+  <td class="duration">
+    5,348s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"q@gmail.com", "Можно использовать данный email для регистрации", "Данный email уже зарегистрирован", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                q@gmail.com<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле email<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationEmailTest
+      </td>
+  <td class="duration">
+    7,356s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">" invalid@-email.com", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                 invalid@-email.com<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле email<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationEmailTest
+      </td>
+  <td class="duration">
+    5,504s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"invalid”test”@email.com", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                invalid”test”@email.com<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле email<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationEmailTest
+      </td>
+  <td class="duration">
+    6,054s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">".invalid@email.com", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                .invalid@email.com<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле email<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationEmailTest
+      </td>
+  <td class="duration">
+    4,890s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"@email.com", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                @email.com<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле email<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationEmailTest
+      </td>
+  <td class="duration">
+    6,818s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"invalid@email.com (tester)", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                invalid@email.com (tester)<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле email<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationEmailTest
+      </td>
+  <td class="duration">
+    6,562s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"email@111.222.333.44444", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                email@111.222.333.44444<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле email<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationEmailTest
+      </td>
+  <td class="duration">
+    5,388s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"example@s.solutions", "Можно использовать данный email для регистрации", "Данный email уже зарегистрирован", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                example@s.solutions<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле email<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationEmailTest
+      </td>
+  <td class="duration">
+    4,872s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"i”n(v)a;l:id@email.com", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                i”n(v)a;l:id@email.com<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле email<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationEmailTest
+      </td>
+  <td class="duration">
+    7,028s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"12345@email.com", "Можно использовать данный email для регистрации", "Данный email уже зарегистрирован", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                12345@email.com<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле email<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationEmailTest
+      </td>
+  <td class="duration">
+    5,333s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"invalid.email.com", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                invalid.email.com<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле email<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationEmailTest
+      </td>
+  <td class="duration">
+    5,064s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">" invalid@email…com", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                 invalid@email…com<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле email<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationEmailTest
+      </td>
+  <td class="duration">
+    4,729s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"dash-symbol@email.com", "Можно использовать данный email для регистрации", "Данный email уже зарегистрирован", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                dash-symbol@email.com<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле email<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationEmailTest
+      </td>
+  <td class="duration">
+    5,339s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">" invalid…test@email.com", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                 invalid…test@email.com<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле email<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationEmailTest
+      </td>
+  <td class="duration">
+    5,512s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"invalid@email…com", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                invalid@email…com<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле email<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationEmailTest
+      </td>
+  <td class="duration">
+    5,043s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"dash-symbol@email-dash.com", "Можно использовать данный email для регистрации", "Данный email уже зарегистрирован", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                dash-symbol@email-dash.com<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле email<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationEmailTest
+      </td>
+  <td class="duration">
+    5,096s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"this is”not\allowed@email.com", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                this is”not\allowed@email.com<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле email<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationEmailTest
+      </td>
+  <td class="duration">
+    5,218s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"invalid@email…com"", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                invalid@email…com&quot;<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле email<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationEmailTest
+      </td>
+  <td class="duration">
+    5,801s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"simpleEmail@email.com", "Можно использовать данный email для регистрации", "Данный email уже зарегистрирован", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                simpleEmail@email.com<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле email<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationLoginTest
+      </td>
+  <td class="duration">
+    4,255s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"/log", "Вы используете недопустимое имя", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                /log<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле login<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationLoginTest
+      </td>
+  <td class="duration">
+    4,966s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"*log", "Вы используете недопустимое имя", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                *log<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле login<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationLoginTest
+      </td>
+  <td class="duration">
+    6,493s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">":log", "Можно использовать данный логин для регистрации", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                :log<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле login<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationLoginTest
+      </td>
+  <td class="duration">
+    5,259s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"`log", "Можно использовать данный логин для регистрации", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                `log<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле login<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationLoginTest
+      </td>
+  <td class="duration">
+    5,528s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">";log", "Можно использовать данный логин для регистрации", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                ;log<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле login<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationLoginTest
+      </td>
+  <td class="duration">
+    4,886s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"", "Имя пользователя не может быть пустым", "Имя пользователя не может быть пустым", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                <br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле login<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationLoginTest
+      </td>
+  <td class="duration">
+    4,646s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"~log", "Вы используете недопустимое имя", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                ~log<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле login<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationLoginTest
+      </td>
+  <td class="duration">
+    5,020s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"rewqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq", "Логин не может быть менее 3 символов и более 30 символов", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                rewqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле login<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationLoginTest
+      </td>
+  <td class="duration">
+    6,703s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"login12341234", "Можно использовать данный логин для регистрации", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                login12341234<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле login<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationLoginTest
+      </td>
+  <td class="duration">
+    4,661s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"$log", "Вы используете недопустимое имя", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                $log<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле login<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationLoginTest
+      </td>
+  <td class="duration">
+    7,878s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"q", "Логин не может быть менее 3 символов и более 30 символов", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                q<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле login<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationLoginTest
+      </td>
+  <td class="duration">
+    6,086s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"^log", "Можно использовать данный логин для регистрации", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                ^log<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле login<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationLoginTest
+      </td>
+  <td class="duration">
+    4,834s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"#log", "Можно использовать данный логин для регистрации", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                #log<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле login<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationLoginTest
+      </td>
+  <td class="duration">
+    5,391s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"log", "Можно использовать данный логин для регистрации", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                log<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле login<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationLoginTest
+      </td>
+  <td class="duration">
+    4,578s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"qw", "Логин не может быть менее 3 символов и более 30 символов", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                qw<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле login<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationLoginTest
+      </td>
+  <td class="duration">
+    5,432s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">""log", "Вы используете недопустимое имя", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                &quot;log<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле login<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationLoginTest
+      </td>
+  <td class="duration">
+    6,250s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"?log", "Вы используете недопустимое имя", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                ?log<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле login<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationLoginTest
+      </td>
+  <td class="duration">
+    5,202s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"%log", "Вы используете недопустимое имя", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                %log<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле login<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationLoginTest
+      </td>
+  <td class="duration">
+    5,605s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"&log", "Вы используете недопустимое имя", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                &amp;log<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле login<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationLoginTest
+      </td>
+  <td class="duration">
+    4,962s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"!log", "Вы используете недопустимое имя", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                !log<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле login<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationPswTest
+      </td>
+  <td class="duration">
+    4,472s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"q", "Длина пароля должна быть не менее 6 символов", "Логин не может быть менее 3 символов и более 30 символов", "Введен неверный email адрес"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                q<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле password<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationPswTest
+      </td>
+  <td class="duration">
+    5,610s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"qqq", "Длина пароля должна быть не менее 6 символов", "Логин не может быть менее 3 символов и более 30 символов", "Введен неверный email адрес"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                qqq<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле password<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationPswTest
+      </td>
+  <td class="duration">
+    5,526s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"q", "Длина пароля должна быть не менее 6 символов", "Логин не может быть менее 3 символов и более 30 символов", "Введен неверный email адрес"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                q<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле password<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationPswTest
+      </td>
+  <td class="duration">
+    8,613s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"qqqqq", "Длина пароля должна быть не менее 6 символов", "Логин не может быть менее 3 символов и более 30 символов", "Введен неверный email адрес"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                qqqqq<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле password<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationPswTest
+      </td>
+  <td class="duration">
+    7,222s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"qqqq", "Длина пароля должна быть не менее 6 символов", "Логин не может быть менее 3 символов и более 30 символов", "Введен неверный email адрес"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                qqqq<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле password<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationPswTest
+      </td>
+  <td class="duration">
+    7,016s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"", "Длина пароля должна быть не менее 6 символов", "Логин не может быть менее 3 символов и более 30 символов", "Введен неверный email адрес"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                <br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле password<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationPswTest
+      </td>
+  <td class="duration">
+    6,028s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"q", "Длина пароля должна быть не менее 6 символов", "Логин не может быть менее 3 символов и более 30 символов", "Введен неверный email адрес"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                q<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле password<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationPswTest
+      </td>
+  <td class="duration">
+    4,986s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"q", "Длина пароля должна быть не менее 6 символов", "Логин не может быть менее 3 символов и более 30 символов", "Введен неверный email адрес"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                q<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле password<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  RegistrationPswTest
+      </td>
+  <td class="duration">
+    5,192s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"q", "Длина пароля должна быть не менее 6 символов", "Логин не может быть менее 3 символов и более 30 символов", "Введен неверный email адрес"</span><br />
+    
+            <div class="testOutput">
+                        *<br />
+                                q<br />
+                                *<br />
+                                Очистка всех полей<br />
+                                Ввод в поле password<br />
+                                Нажатие на кнопку подверждения регистрации<br />
+                                Проверка выведенного сообщения<br />
+                                Корректное сообщение выведено<br />
+                                <br/>
+<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
   
 </body>
 </html>

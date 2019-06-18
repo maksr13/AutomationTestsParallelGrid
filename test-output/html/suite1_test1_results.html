@@ -3,1005 +3,323 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
 <head>
-  <title>Test Results Report - Тест регистрационной формы на валидность [Opera]</title>
+  <title>Test Results Report - Тест добавления закладки [Chrome]</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="description" content="TestNG unit test results." />
   <link href="reportng.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="reportng.js"></script>
 </head>
 <body>
-<h1>Тест регистрационной формы на валидность [Opera]</h1>
+<h1>Тест добавления закладки [Chrome]</h1>
 <p>
-  Test duration: 0,227s
+  Test duration: 55,953s
 </p>
 
-  <table class="resultsTable configTable">
-    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
-              <tr class="group">
-        <td colspan="3">RegistrationFormFieldsTest</td>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">BookmarksTest</td>
       </tr>
             
 <tr>
   <td class="method">
-                  setUp
+                  AddCheckBookmarkTest
       </td>
   <td class="duration">
-    0,000s
+    0,019s
   </td>
   <td class="result">
         
     
-        
+            <div class="testOutput">
+                        <br />
+                                ---------------------------------------------------------------------<br />
+                                ПРОВЕРКА ПОЯВЛЕНИЯ ДОБАВЛЕННОГО ФИЛЬМА В ЗАКЛАДКАХ<br />
+                                ---------------------------------------------------------------------<br />
+                                Проверка наличия кнопки перехода в раздел закладок<br />
+                  </div>
+    
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.testng.TestNGException: <br/>
-Parameter &apos;Log&apos; is required by @Configuration on method setUp but has not been marked @Optional or defined<br/>
-in D:\Учеба предметы\ДИПЛОМ\TestNGPr2\RemoteRun.xml</b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed<br/>
+from unknown error: web view not found<br/>
+&nbsp; (Session info: chrome=74.0.3729.169)<br/>
+&nbsp; (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 0 milliseconds<br/>
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;<br/>
+System info: host: &apos;MAKSPC&apos;, ip: &apos;10.3.104.65&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Maks\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50053}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}<br/>
+Session ID: 0531fef2215ca542a9463364b8421d3c<br/>
+*** Element info: {Using=css selector, value=#top-head &gt; div &gt; div.b-tophead-right.user-things.pull-right &gt; a:nth-child(3)}</b></a><br />
     <div class="stackTrace" id="exception-0">
-              org.testng.internal.Parameters.createParameters(Parameters.java:155)<br />
-              org.testng.internal.Parameters.createParameters(Parameters.java:355)<br />
-              org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:86)<br />
-              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:199)<br />
-              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)<br />
-              org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)<br />
+              org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)<br />
+              org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)<br />
+              org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:344)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementsByCssSelector(RemoteWebDriver.java:415)<br />
+              org.openqa.selenium.By$ByCssSelector.findElements(By.java:441)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:305)<br />
+              BookmarksTest.AddCheckBookmarkTest(BookmarksTest.java:158)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
               org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
               org.testng.TestRunner.run(TestRunner.java:617)<br />
               org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
-              org.testng.SuiteRunner.access$000(SuiteRunner.java:37)<br />
-              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)<br />
-              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
-              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
-              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br />
-              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br />
-              java.lang.Thread.run(Thread.java:748)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)<br />
+              org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)<br />
                 </div>
       </td>
 </tr>
-    
-          <tr><td colspan="3">&nbsp;</td></tr>
-      <tr><td colspan="3" class="header skippedConfig">Skipped Configuration</td></tr>
-                    <tr>
-          <td colspan="3" class="group">RegistrationFormFieldsTest</td>
-        </tr>
-                
 <tr>
   <td class="method">
-                  tearDown
+                  AddingBookmarkTest
       </td>
   <td class="duration">
-    0,000s
+    0,014s
   </td>
   <td class="result">
-                               
-    
         
+    
+            <div class="testOutput">
+                        ---------------------------------------------------------------------<br />
+                                ДОБАВЛЕНИЕ ФИЛЬМА В ЗАКЛАДКИ<br />
+                                ---------------------------------------------------------------------<br />
+                                Переход на страницу первого фильма на главной странице<br />
+                  </div>
+    
 
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed<br/>
+from unknown error: web view not found<br/>
+&nbsp; (Session info: chrome=74.0.3729.169)<br/>
+&nbsp; (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 0 milliseconds<br/>
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;<br/>
+System info: host: &apos;MAKSPC&apos;, ip: &apos;10.3.104.65&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Maks\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50053}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}<br/>
+Session ID: 0531fef2215ca542a9463364b8421d3c<br/>
+*** Element info: {Using=css selector, value=#main &gt; div.b-container.b-content.b-wrapper &gt; div.b-content__inline &gt; div &gt; div.b-content__inline_items&nbsp; :first-child :first-child}</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)<br />
+              org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)<br />
+              org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)<br />
+              org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:411)<br />
+              org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)<br />
+              BookmarksTest.AddingBookmarkTest(BookmarksTest.java:79)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)<br />
+              org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)<br />
+                </div>
       </td>
 </tr>
 <tr>
   <td class="method">
-                  teardownTest
+                  AuthorizationOnTheSite
       </td>
   <td class="duration">
-    0,000s
+    46,781s
   </td>
   <td class="result">
-                               
-    
         
-
-      </td>
-</tr>
-            </table>
-
-
-
-  <table class="resultsTable" width="100%">
-    <tr><th colspan="3" class="header skipped">Skipped Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">RegistrationFormFieldsTest</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  GoToRegistrationForm
-      </td>
-  <td class="duration">
-    0,023s
-  </td>
-  <td class="result">
-                               
     
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationEmailTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"simpleEmail@email.com", "Можно использовать данный email для регистрации", "Данный email уже зарегистрирован", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+            <div class="testOutput">
+                        ---------------------------------------------------------------------<br />
+                                АВТОРИЗАЦИЯ НА САЙТЕ<br />
+                                ---------------------------------------------------------------------<br />
+                                Открытие главной страницы<br />
+                                Начало авторизации<br />
+                                Проверка наличия кнопки открытия формы для авторизации<br />
+                  </div>
     
-        
 
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationEmailTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"example@s.solutions", "Можно использовать данный email для регистрации", "Данный email уже зарегистрирован", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationEmailTest
-      </td>
-  <td class="duration">
-    0,002s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">" invalid…test@email.com", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
+        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed<br/>
+from unknown error: web view not found<br/>
+&nbsp; (Session info: chrome=74.0.3729.169)<br/>
+&nbsp; (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 0 milliseconds<br/>
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;<br/>
+System info: host: &apos;MAKSPC&apos;, ip: &apos;10.3.104.65&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Maks\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50053}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}<br/>
+Session ID: 0531fef2215ca542a9463364b8421d3c<br/>
+*** Element info: {Using=css selector, value=#top-head &gt; div &gt; div.b-tophead-right.pull-right &gt; a.b-tophead__login}</b></a><br />
+    <div class="stackTrace" id="exception-2">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)<br />
+              org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)<br />
+              org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)<br />
+              org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:344)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementsByCssSelector(RemoteWebDriver.java:415)<br />
+              org.openqa.selenium.By$ByCssSelector.findElements(By.java:441)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:305)<br />
+              BookmarksTest.AuthorizationOnTheSite(BookmarksTest.java:27)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)<br />
+              org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)<br />
+                </div>
       </td>
 </tr>
 <tr>
   <td class="method">
-                  RegistrationEmailTest
+                  DelletingBookmarkTest
       </td>
   <td class="duration">
-    0,000s
+    0,014s
   </td>
   <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"q@gmail.com", "Можно использовать данный email для регистрации", "Данный email уже зарегистрирован", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
         
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationEmailTest
-      </td>
-  <td class="duration">
-    0,008s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"invalid@test@email.com", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
     
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationEmailTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"i”n(v)a;l:id@email.com", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
+            <div class="testOutput">
+                        ---------------------------------------------------------------------<br />
+                                УДАЛЕНИЕ ФИЛЬМА ИЗ ЗАКЛАДОК<br />
+                                ---------------------------------------------------------------------<br />
+                                Проверка наличия чекбокса удаления<br />
+                  </div>
     
-        
 
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationEmailTest
-      </td>
-  <td class="duration">
-    0,001s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"asdfasdfasdfasdfasdf", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationEmailTest
-      </td>
-  <td class="duration">
-    0,001s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"dash-symbol@email.com", "Можно использовать данный email для регистрации", "Данный email уже зарегистрирован", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationEmailTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"invalid@email…com"", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationEmailTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"dash-symbol@email-dash.com", "Можно использовать данный email для регистрации", "Данный email уже зарегистрирован", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationEmailTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"invalid@email.com (tester)", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationEmailTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"12345@email.com", "Можно использовать данный email для регистрации", "Данный email уже зарегистрирован", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationEmailTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"invalid@test@email.com", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationEmailTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"simple.email@email.com", "Можно использовать данный email для регистрации", "Данный email уже зарегистрирован", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationEmailTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"invalid@email…com", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationEmailTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">" invalid@-email.com", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationEmailTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"test@emailServer", "Можно использовать данный email для регистрации", "Данный email уже зарегистрирован", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationEmailTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"user@[IPv6:2001:DB8::1]", "Можно использовать данный email для регистрации", "Данный email уже зарегистрирован", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationEmailTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"this is”not\allowed@email.com", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationEmailTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"invalid.email.com", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationEmailTest
-      </td>
-  <td class="duration">
-    0,001s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"invalid”test”@email.com", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationEmailTest
-      </td>
-  <td class="duration">
-    0,164s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">".invalid@email.com", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationEmailTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">""unusual"@email.com", "Можно использовать данный email для регистрации", "Данный email уже зарегистрирован", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationEmailTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"" "@email.com", "Можно использовать данный email для регистрации", "Данный email уже зарегистрирован", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationEmailTest
-      </td>
-  <td class="duration">
-    0,001s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"@email.com", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationEmailTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"invalid.@email.com", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationEmailTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">" invalid@email…com", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationEmailTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"plus+symbol@email.com", "Можно использовать данный email для регистрации", "Данный email уже зарегистрирован", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationEmailTest
-      </td>
-  <td class="duration">
-    0,013s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"email@111.222.333.44444", "Введен неверный email адрес", "Введен неверный email адрес", "Имя пользователя не может быть пустым", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationLoginTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"", "Имя пользователя не может быть пустым", "Имя пользователя не может быть пустым", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationLoginTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"^log", "Можно использовать данный логин для регистрации", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationLoginTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">":log", "Можно использовать данный логин для регистрации", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationLoginTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"~log", "Вы используете недопустимое имя", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationLoginTest
-      </td>
-  <td class="duration">
-    0,001s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">";log", "Можно использовать данный логин для регистрации", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationLoginTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"*log", "Вы используете недопустимое имя", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationLoginTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"rewqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq", "Логин не может быть менее 3 символов и более 30 символов", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationLoginTest
-      </td>
-  <td class="duration">
-    0,005s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"$log", "Вы используете недопустимое имя", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationLoginTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"?log", "Вы используете недопустимое имя", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationLoginTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"`log", "Можно использовать данный логин для регистрации", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationLoginTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"%log", "Вы используете недопустимое имя", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationLoginTest
-      </td>
-  <td class="duration">
-    0,002s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"!log", "Вы используете недопустимое имя", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationLoginTest
-      </td>
-  <td class="duration">
-    0,001s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"login12341234", "Можно использовать данный логин для регистрации", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationLoginTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">""log", "Вы используете недопустимое имя", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationLoginTest
-      </td>
-  <td class="duration">
-    0,001s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"log", "Можно использовать данный логин для регистрации", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationLoginTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"/log", "Вы используете недопустимое имя", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationLoginTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"&log", "Вы используете недопустимое имя", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationLoginTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"1log", "Можно использовать данный логин для регистрации", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationLoginTest
-      </td>
-  <td class="duration">
-    0,001s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"qw", "Логин не может быть менее 3 символов и более 30 символов", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationLoginTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"#log", "Можно использовать данный логин для регистрации", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationLoginTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"q", "Логин не может быть менее 3 символов и более 30 символов", "Данный логин уже зарегистрирован", "Введен неверный email адрес", "Длина пароля должна быть не менее 6 символов"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationPswTest
-      </td>
-  <td class="duration">
-    0,001s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"q", "Длина пароля должна быть не менее 6 символов", "Логин не может быть менее 3 символов и более 30 символов", "Введен неверный email адрес"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationPswTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"qqqq", "Длина пароля должна быть не менее 6 символов", "Логин не может быть менее 3 символов и более 30 символов", "Введен неверный email адрес"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationPswTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"qqqqq", "Длина пароля должна быть не менее 6 символов", "Логин не может быть менее 3 символов и более 30 символов", "Введен неверный email адрес"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationPswTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"qqq", "Длина пароля должна быть не менее 6 символов", "Логин не может быть менее 3 символов и более 30 символов", "Введен неверный email адрес"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationPswTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"q", "Длина пароля должна быть не менее 6 символов", "Логин не может быть менее 3 символов и более 30 символов", "Введен неверный email адрес"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationPswTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"q", "Длина пароля должна быть не менее 6 символов", "Логин не может быть менее 3 символов и более 30 символов", "Введен неверный email адрес"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationPswTest
-      </td>
-  <td class="duration">
-    0,001s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"q", "Длина пароля должна быть не менее 6 символов", "Логин не может быть менее 3 символов и более 30 символов", "Введен неверный email адрес"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationPswTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"q", "Длина пароля должна быть не менее 6 символов", "Логин не может быть менее 3 символов и более 30 символов", "Введен неверный email адрес"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  RegistrationPswTest
-      </td>
-  <td class="duration">
-    0,000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"", "Длина пароля должна быть не менее 6 символов", "Логин не может быть менее 3 символов и более 30 символов", "Введен неверный email адрес"</span><br />
-    
-        
-
+        <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed<br/>
+from unknown error: web view not found<br/>
+&nbsp; (Session info: chrome=74.0.3729.169)<br/>
+&nbsp; (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 0 milliseconds<br/>
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;<br/>
+System info: host: &apos;MAKSPC&apos;, ip: &apos;10.3.104.65&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Maks\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50053}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}<br/>
+Session ID: 0531fef2215ca542a9463364b8421d3c<br/>
+*** Element info: {Using=css selector, value=.b-content__inline div[class = &quot;b-content__inline_item&quot;] &gt; .b-content__inline_item-cover input[type=&quot;checkbox&quot;]}</b></a><br />
+    <div class="stackTrace" id="exception-3">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)<br />
+              org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)<br />
+              org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)<br />
+              org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:344)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementsByCssSelector(RemoteWebDriver.java:415)<br />
+              org.openqa.selenium.By$ByCssSelector.findElements(By.java:441)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:305)<br />
+              BookmarksTest.DelletingBookmarkTest(BookmarksTest.java:189)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)<br />
+              org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)<br />
+                </div>
       </td>
 </tr>
       </table>
+
 
   
 </body>

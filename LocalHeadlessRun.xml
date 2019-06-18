@@ -43,6 +43,8 @@
     <parameter name="NodeAdress" value=""/>
     <parameter name="SpecialParameter" value=""/>
     <parameter name="mode" value="local"/>
+    <parameter name="Log" value=""/>
+    <parameter name="Psw" value=""/>
 
 
     <!--________________________________________________________________-->
@@ -65,7 +67,6 @@
             <class name="RegistrationFormFieldsTest"/>
         </classes>
     </test>
-
     <!--________________________________________________________________-->
 
     <test name="Проверка всех ссылок на главной странице [Chrome]">
@@ -93,27 +94,27 @@
 
     <test name="Тест добавления оценки [Chrome]">
         <parameter name="selenium.browser" value="4"/>
-        <parameter name="Log" value=""/>
-        <parameter name="Psw" value=""/>
-        <parameter name="SpecialParameter" value=""/>
+        <parameter name="Log" value="Maks13"/>
+        <parameter name="Psw" value="rtzh37h1c2m"/>
+        <parameter name="SpecialParameter" value="https://rezka.ag/films/drama/29539-zelenaya-kniga-2018-movie-1.html"/>
         <classes>
             <class name="AddingMarkForFilmTest"/>
         </classes>
     </test>
     <test name="Тест добавления оценки [Firefox]">
         <parameter name="selenium.browser" value="5"/>
-        <parameter name="Log" value=""/>
-        <parameter name="Psw" value=""/>
-        <parameter name="SpecialParameter" value=""/>
+        <parameter name="Log" value="Maks13"/>
+        <parameter name="Psw" value="rtzh37h1c2m"/>
+        <parameter name="SpecialParameter" value="https://rezka.ag/films/drama/30960-malysh-kid-2019.html"/>
         <classes>
             <class name="AddingMarkForFilmTest"/>
         </classes>
     </test>
     <test name="Тест добавления оценки [Opera]">
         <parameter name="selenium.browser" value="6"/>
-        <parameter name="Log" value=""/>
-        <parameter name="Psw" value=""/>
-        <parameter name="SpecialParameter" value=""/>
+        <parameter name="Log" value="Maks13"/>
+        <parameter name="Psw" value="rtzh37h1c2m"/>
+        <parameter name="SpecialParameter" value="https://rezka.ag/series/drama/30992-pod-prikrytiem-2019.html"/>
         <classes>
             <class name="AddingMarkForFilmTest"/>
         </classes>
@@ -123,26 +124,54 @@
 
     <test name="Тест добавления закладки [Chrome]">
         <parameter name="selenium.browser" value="4"/>
-        <parameter name="Log" value=""/>
-        <parameter name="Psw" value=""/>
+        <parameter name="Log" value="Maks13"/>
+        <parameter name="Psw" value="rtzh37h1c2m"/>
         <classes>
             <class name="BookmarksTest"/>
         </classes>
     </test>
     <test name="Тест добавления закладки [Firefox]">
         <parameter name="selenium.browser" value="5"/>
-        <parameter name="Log" value=""/>
-        <parameter name="Psw" value=""/>
+        <parameter name="Log" value="Maks13"/>
+        <parameter name="Psw" value="rtzh37h1c2m"/>
         <classes>
             <class name="BookmarksTest"/>
         </classes>
     </test>
     <test name="Тест добавления закладки [Opera]">
         <parameter name="selenium.browser" value="6"/>
-        <parameter name="Log" value=""/>
-        <parameter name="Psw" value=""/>
+        <parameter name="Log" value="Maks13"/>
+        <parameter name="Psw" value="rtzh37h1c2m"/>
         <classes>
             <class name="BookmarksTest"/>
+        </classes>
+    </test>
+
+
+    <!--________________________________________________________________-->
+
+    <test name="Тест добавления комментария [Chrome]">
+        <parameter name="selenium.browser" value="4"/>
+        <parameter name="Log" value="Maks13"/>
+        <parameter name="Psw" value="rtzh37h1c2m"/>
+        <classes>
+            <class name="UserCommentingTest"/>
+        </classes>
+    </test>
+    <test name="Тест добавления комментария [Firefox]">
+        <parameter name="selenium.browser" value="5"/>
+        <parameter name="Log" value="Maks13"/>
+        <parameter name="Psw" value="rtzh37h1c2m"/>
+        <classes>
+            <class name="UserCommentingTest"/>
+        </classes>
+    </test>
+    <test name="Тест добавления комментария [Opera]">
+        <parameter name="selenium.browser" value="6"/>
+        <parameter name="Log" value="Maks13"/>
+        <parameter name="Psw" value="rtzh37h1c2m"/>
+        <classes>
+            <class name="UserCommentingTest"/>
         </classes>
     </test>
 
@@ -150,8 +179,8 @@
 
     <test name="Тест добавления фильма в раздел Досмотреть [Chrome]">
         <parameter name="selenium.browser" value="4"/>
-        <parameter name="Log" value=""/>
-        <parameter name="Psw" value=""/>
+        <parameter name="Log" value="Maks13"/>
+        <parameter name="Psw" value="rtzh37h1c2m"/>
         <parameter name="SpecialParameter" value="https://rezka.ag/films/drama/29539-zelenaya-kniga-2018-movie-1.html"/>
         <classes>
             <class name="WatchFilmLaterTest"/>
@@ -159,47 +188,20 @@
     </test>
     <test name="Тест добавления фильма в раздел Досмотреть [Firefox]">
         <parameter name="selenium.browser" value="5"/>
-        <parameter name="Log" value=""/>
-        <parameter name="Psw" value=""/>
-        <parameter name="SpecialParameter" value="https://rezka.ag/films/drama/29539-zelenaya-kniga-2018-movie-1.html"/>
+        <parameter name="Log" value="Maks13"/>
+        <parameter name="Psw" value="rtzh37h1c2m"/>
+        <parameter name="SpecialParameter" value="https://rezka.ag/films/drama/30960-malysh-kid-2019.html"/>
         <classes>
             <class name="WatchFilmLaterTest"/>
         </classes>
     </test>
     <test name="Тест добавления фильма в раздел Досмотреть [Opera]">
         <parameter name="selenium.browser" value="6"/>
-        <parameter name="Log" value=""/>
-        <parameter name="Psw" value=""/>
-        <parameter name="SpecialParameter" value="https://rezka.ag/films/drama/29539-zelenaya-kniga-2018-movie-1.html"/>
+        <parameter name="Log" value="Maks13"/>
+        <parameter name="Psw" value="rtzh37h1c2m"/>
+        <parameter name="SpecialParameter" value="https://rezka.ag/films/comedy/7485-rio-ya-lyublyu-tebya-2014.html"/>
         <classes>
             <class name="WatchFilmLaterTest"/>
-        </classes>
-    </test>
-
-    <!--________________________________________________________________-->
-
-    <test name="Тест добавления комментария [Chrome]">
-        <parameter name="selenium.browser" value="4"/>
-        <parameter name="Log" value=""/>
-        <parameter name="Psw" value=""/>
-        <classes>
-            <class name="UserCommentingTest"/>
-        </classes>
-    </test>
-    <test name="Тест добавления комментария [Firefox]">
-        <parameter name="selenium.browser" value="5"/>
-        <parameter name="Log" value=""/>
-        <parameter name="Psw" value=""/>
-        <classes>
-            <class name="UserCommentingTest"/>
-        </classes>
-    </test>
-    <test name="Тест добавления комментария [Opera]">
-        <parameter name="selenium.browser" value="6"/>
-        <parameter name="Log" value=""/>
-        <parameter name="Psw" value=""/>
-        <classes>
-            <class name="UserCommentingTest"/>
         </classes>
     </test>
 

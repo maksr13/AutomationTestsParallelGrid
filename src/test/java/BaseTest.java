@@ -14,6 +14,7 @@ import org.testng.annotations.*;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
@@ -24,6 +25,9 @@ public class BaseTest {
     protected String log;
     protected String psw;
     protected String SpecialParameterForTest;
+
+    public long classTimeSec=0;
+    public static long fullTimeSec=0;
 
     private WebDriver getLocalDriver(int browser){
         switch(browser) {
@@ -41,7 +45,7 @@ public class BaseTest {
                 System.setProperty("webdriver.opera.driver", System.getProperty("user.dir") +
                         "/drivers/operadriver.exe");
                 OperaOptions optionsOpera = new OperaOptions();
-                optionsOpera.setBinary("C:\\Users\\Maks\\AppData\\Local\\Programs\\Opera\\60.0.3255.95\\opera.exe");
+                optionsOpera.setBinary("C:\\Users\\Maks\\AppData\\Local\\Programs\\Opera\\60.0.3255.151\\opera.exe");
 
                 return new OperaDriver(optionsOpera);
 
@@ -63,12 +67,20 @@ public class BaseTest {
                         "/drivers/operadriver.exe");
                 OperaOptions optionsOperaH = new OperaOptions();
                 optionsOperaH.addArguments("--headless");
-                optionsOperaH.setBinary("C:\\Users\\Maks\\AppData\\Local\\Programs\\Opera\\60.0.3255.95\\opera.exe");
+                optionsOperaH.setBinary("C:\\Users\\Maks\\AppData\\Local\\Programs\\Opera\\60.0.3255.151\\opera.exe");
                 return new OperaDriver(optionsOperaH);
-
         }
     }
 
+    protected void checkNewTabsAndDeleting()
+    {
+        ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
+        if(tabs.size() > 1){
+            driver.switchTo().window(tabs.get(1));
+            driver.close();
+            driver.switchTo().window(tabs.get(0));
+        }
+    }
 
     private RemoteWebDriver getRemoteDriver(int browser, int platform, String node) throws MalformedURLException {
         Platform currentPlatform;
@@ -112,6 +124,7 @@ public class BaseTest {
                 return new RemoteWebDriver(new URL(node), capabilitiesFirefox);
             case 3:
                 DesiredCapabilities capabilitiesOpera = DesiredCapabilities.operaBlink();
+                capabilitiesOpera.setCapability("operablink.binary","C:\\Users\\Maks\\AppData\\Local\\Programs\\Opera\\60.0.3255.151\\opera.exe");
                 capabilitiesOpera.setPlatform(currentPlatform);
                 return new RemoteWebDriver(new URL(node), capabilitiesOpera);
 
@@ -136,8 +149,11 @@ public class BaseTest {
 
 
     @BeforeClass
-    @Parameters({"selenium.browser", "platform", "NodeAdress", "SpecialParameter", "Log", "Psw", "mode"})
-    public void setUp(String browserString, String platformString, String node, String SpecParam, String log, String psw, String mode)throws MalformedURLException {
+    @Parameters({"selenium.browser", "platform", "NodeAdress",
+                "SpecialParameter", "Log", "Psw", "mode"})
+    public void setUp(String browserString, String platformString, String node,
+                      String SpecParam, String log, String psw, String mode)
+                      throws MalformedURLException {
 
         int browser = Integer.parseInt(browserString);
         int platform = Integer.parseInt(platformString);
@@ -148,8 +164,8 @@ public class BaseTest {
             if(mode.equals("remote"))
                 driver = getRemoteDriver(browser, platform, node);
 
-        driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
-        //driver.manage().timeouts().pageLoadTimeout(40,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+        //driver.manage().timeouts().pageLoadTimeout(20,TimeUnit.SECONDS);
         wait = new WebDriverWait(driver, 12);
 
 
